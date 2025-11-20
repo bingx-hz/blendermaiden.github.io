@@ -1,74 +1,49 @@
 :root {
   --background: #181a1b;
-  --surface: #222527;
   --text: #fff;
-  --accent: #1edf7e;
-  --btn-bg: #1a1d1e;
-  --btn-bg-alt: #203027;
-  --border-radius: 10px;
-  --shadow: 0 2px 16px rgba(0,0,0,0.4);
-  --transition: 0.2s all;
+  --accent: #228B22; /* Updated to requested forest green */
 }
 html, body {
   background: var(--background);
   color: var(--text);
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', 'Fira Sans', Arial, sans-serif;
   min-height: 100vh;
 }
-.container {
-  max-width: 480px;
-  margin: 8vh auto 0 auto;
-  background: var(--surface);
-  box-shadow: var(--shadow);
-  border-radius: var(--border-radius);
-  padding: 2.5rem 2rem 2rem 2rem;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   text-align: center;
 }
 h1 {
-  font-size: 2.7rem;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+  letter-spacing: 0.03em;
 }
 .accent {
   color: var(--accent);
-  font-weight: bold;
 }
-p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
-nav {
-  margin: 2rem 0;
-}
-.btn {
-  display: inline-block;
-  background: var(--accent);
-  color: var(--background);
-  border: none;
-  padding: 0.8rem 1.5rem;
-  margin: 0 0.5rem;
-  border-radius: var(--border-radius);
-  font-size: 1.1rem;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-  cursor: pointer;
-  text-decoration: none;
-  transition: var(--transition);
-}
-.btn.secondary {
-  background: var(--btn-bg-alt);
-  color: var(--accent);
-}
-.btn:hover {
-  filter: brightness(0.92);
-  opacity: 0.96;
-  transform: translateY(-2px) scale(1.025);
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  color: #eee;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 footer {
-  margin-top: 2.5rem;
-  font-size: 0.95rem;
-  color: #bbb;
-  letter-spacing: 0.02em;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #90bca7;
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
 }
